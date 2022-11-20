@@ -28,30 +28,37 @@ format:
 
 ## Declaration of Authorship {.unnumbered .unlisted}
 
-I, [insert your name], confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
+I, Huang Zhiwei, confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
 
-['Sign' your name here]
+Huang Zhiwei
 
-Date:
+Date: 20/11/2022
 
-Student Number: 
+Student Number: 22098674
 
 ## Who collected the data?
-
-An inline citation: As discussed on @insideairbnb, there are many...
-
-A parenthetical citation: There are many ways to research Airbnb [see, for example, @insideairbnb].
-
+Inside Airbnb data for London was collected by a mission driven activist project called The Inside Airbnb. They used web crawlers and other techniques to collect data from the Airbnb website about short-term rentals in many cities.
 ## Why did they collect it?
-
+The Inside Airbnb project hopes to call greater attention to city policy on the negative externalities of short-term flexible rentals brought about by Airbnb on the surrounding community. By collecting this data, they make it possible to quantify the impact of Airbnb in the city. 
 ## How was it collected?
-
+They use Bootstrap, PostgreSQL, python, and other data collection techniques(Data Policies, no date). Inside Airbnb of London data is a CSV format with 74,188 rentals containing many details such as location. Based on the content and form of the data, it is assumed that the organization uses web crawling techniques to crawl the Airbnb website regularly and uses the data at different times to calculate the dynamic changes in rentals.
 ## What useful information does it contain?
-
+The dataset includes 74,188 columns of Airbnb data within the city of London, with each column representing a rental property and each column containing 73 granular metrics, including information such as landlord name, latitude, and longitude coordinates. The data can be categorised into four broad categories: the spatial distribution of homes, the level of service provided by the host, the condition of the home's neighborhood, and the rental status of the home. This data allows for a macro analysis of Airbnb housing within the city, for example, answering questions such as which areas of the city have the highest density of Airbnb housing. In addition, it is possible to focus on the housing itself and explore the impact of the different attributes of the housing on its rental status.
 ## To what extent is the data 'complete'?
-
+The data is relatively complete from the perspective of Airbnb's operations alone. Firstly, there is a large amount of data and complete information on the data, which provides an overall picture of Airbnb's operations at a city level. Secondly, there is a more detailed portrayal of each specific rental property, including data on hosts, recent rentals, and many other data. The data can reflect changes in housing conditions over time. These two aspects give a rough idea of how Airbnb operates in London.
+However, this data still can not give a complete picture of Airbnb's operations in London. The data only includes data on Airbnb and does not include information on the number of homes in the vicinity to determine the proportional distribution of Airbnb in different areas. Data around rental properties is also important when analyzing related operations, but the current dataset has only a relatively small amount of peripheral data to support this analysis.
 ## What kinds of analysis would this support?
-
+The dataset has a relatively rich content, which can be analyzed at three different spatial levels: city, neighborhood, and rental houses.
+At the city level, the data can be imported into data analysis software such as QGIS in the form of coordinate points based on the latitude and longitude coordinates of the data, and information such as rents and occupancy rates that may be used can be assigned to the corresponding data points. The data can be used to study macro urban propositions such as differences in housing prices in different areas of the city, household density distribution, and urban visitation centers.
+At the community level, the research perspective is focused on a small area or the differences between different areas. Data on rents, occupancy rates, neighborhood hygiene, etc., are used to build models of indicators to analyse the characteristics of rentals in different areas, etc. Furthermore, the strength of Airbnb's influence on communities in different areas can be quantified, which is the original purpose of the data collected by the INSIDE Airbnb organisation.
+Focusing on the rental properties themselves, the relevant data can be broken down into four main categories: the spatial distribution of the properties, the level of service provided by the landlord, the condition of the surrounding properties, and the rental status of the properties. Cross-analysis of the relevant data allows for an in-depth exploration of the correlation between the elements surrounding rental housing, such as landlord, housing quality, location, occupancy rate, and rent.
 ## Which of the analyses outlined above are ethical?
-
+The dataset's content includes sensitive information such as the homes' location, landlords' names, and photographs. People can intentionally or unintentionally share photos or reveal compassionate, personally identifiable information and location data, and there are no restrictions on the flow of personal information on the web (Cohen, 2012). We can quickly learn what our hosts look like, where they live, their names, and so on, even though we may not be Airbnb users. Some of the data in this dataset are inherently sensitive and should not be collected, let alone shared, from an ethical perspective.
+For city-level data analysis, it is more likely to use objective data on housing and less likely to involve the private data of landlords. The conclusions of the analysis are generally holistic and abstract and, therefore, less likely to touch on ethical issues regarding the data.
+For community-wide analysis, the findings are directional due to the small area of analysis, when the findings are not just data on paper but have a substantial impact on the people who live there. Are our algorithms accurate enough to ensure that our conclusions are objective and precise, rather than the errors of machines and the biases of academics?
+Analyses focusing on rental housing are more complicated and face additional ethical dilemmas. In the context of practical data approaches, multiple data feeds are combined to generate more profound interpretations without people's knowledge (Crawford and Schultz, 2014). The use of private data directly related to landlords, such as photographs, names, ages, ethnicity, etc., should thus be avoided in this part of the analysis. Furthermore, anonymising and blurring the relevant research to minimise ethical issues.
 ## References
+Cohen, J.E. (2012) Configuring the Networked Self: Law, Code, and the Play of Everyday Practice. Yale University Press.
+Crawford, K. and Finn, M. (2015) ‘The limits of crisis data: analytical and ethical challenges of using social and mobile data to understand disasters’, GeoJournal, 80(4), pp. 491–502. Available at: https://doi.org/10.1007/s10708-014-9597-z.
+Crawford, K. and Schultz, J. (2014) ‘Big Data and Due Process: Toward a Framework to Redress Predictive Privacy Harms’, Boston College Law Review, 55(1), pp. 93–128.
+Data Policies (no date). Available at: http://insideairbnb.com/data-policies (Accessed: 20 November 2022).
